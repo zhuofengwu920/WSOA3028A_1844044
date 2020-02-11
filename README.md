@@ -1,5 +1,5 @@
 <html>
-<header><title>This is title</title></header>
+<header>This is title</header>
 <body>
 Hello world
 </body>
