@@ -1,6 +1,10 @@
+
+
 body {
     margin: 0;
 }
+
+/* nav bar */
 
 header {
     position: -webkit-sticky;
@@ -46,4 +50,53 @@ nav ul li a:hover{
 .active a{
     color: #999;
     background-color:#444;
+}
+
+/*Blog Page*/
+
+.blog-divide {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1%;
+}
+
+.blog-divide div{
+    margin: 0;
+    padding: 25px;
+    width: 400px;
+    height: 100%;
+    background-color: purple;
+}
+
+.blog-divide div h1{
+    text-align: center;
+}
+
+.blog-divide div ul{
+    position: relative;
+    padding: 2%;
+    margin: 0;
+}
+
+.blog-divide div ul li{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.blog-divide div ul li a{
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30;
+    overflow-x: hidden;
+    color:black;
+}
+
+.blog-divide div ul li a:hover{
+    color: #333;
+    background-color: grey;
 }
