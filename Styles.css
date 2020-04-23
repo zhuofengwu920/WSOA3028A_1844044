@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    position: relative;
+    padding-left: 5%;
+}
+
+nav ul{
+    position: relative;
+    margin: 20px,0,0,0;
+    bottom: 5px;
+}
+
+nav ul li{
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20;
+    overflow-x: hidden;
+    color: #666;
+}
+
+nav ul li a:hover{
+    color: #999;
+    background-color:#333;
+}
+
+.active a{
+    color: #999;
+    background-color:#444;
+}
