@@ -62,11 +62,11 @@ nav ul li a:hover{
 }
 
 .blog-divide div{
-    margin: 0;
+    margin-top: 25px;
     padding: 25px;
     width: 400px;
     height: 100%;
-    background-color: purple;
+    background-color: rgb(80, 129, 128);
 }
 
 .blog-divide div h1{
@@ -97,6 +97,6 @@ nav ul li a:hover{
 }
 
 .blog-divide div ul li a:hover{
-    color: #333;
-    background-color: grey;
+    color: #E1E5F2;
+    background-color: #5A7D7C;
 }
