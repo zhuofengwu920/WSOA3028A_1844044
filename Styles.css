@@ -52,6 +52,10 @@ nav ul li a:hover{
     background-color:#444;
 }
 
+footer a{
+    display: inline-block;
+}
+
 /*Blog Page*/
 
 .blog-divide {
