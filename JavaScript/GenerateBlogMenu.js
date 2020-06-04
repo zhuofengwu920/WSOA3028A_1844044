@@ -14,30 +14,28 @@ const blogItem = [
     { title: 'COVID-19', type: 'Creative' },
 ]
 
-function generateBlogLink(temptitle, temptype){
+function generateBlogLink(temptitle, temptype) {
     let link = '/WSOA3028A_1844044/Blog/' + temptype + '/' + temptitle + '.html';
 
     return link
 }
 
-function initialiseTheoryMenu(){
-    const div = document.querySelector('.theory');
+function initialiseBlofMenuByClass(temptype) {
+    const div = document.querySelector('.' + temptype);
 
     const h2 = document.createElement('h2');
 
-    h2.innerText = 'Theory Blogs';
+    h2.innerText = temptype + ' Blogs';
 
     div.appendChild(h2);
 
     const ul = document.createElement('ul');
 
-    for (let item of blogItem) 
-    {
-        if (item.type == 'Theory')
-        {
-            const li  = document.createElement('li');
+    for (let item of blogItem) {
+        if (item.type == temptype) {
+            const li = document.createElement('li');
             const a = document.createElement('a');
-            
+
             a.innerText = item.title;
             a.href = generateBlogLink(item.title, item.type);
 
@@ -49,68 +47,68 @@ function initialiseTheoryMenu(){
     div.appendChild(ul);
 }
 
-function initialiseTechnicalMenu(){
-    const div = document.querySelector('.technical');
+// function initialiseTechnicalMenu(){
+//     const div = document.querySelector('.technical');
 
-    const h2 = document.createElement('h2');
+//     const h2 = document.createElement('h2');
 
-    h2.innerText = 'Technical Blogs';
+//     h2.innerText = 'Technical Blogs';
 
-    div.appendChild(h2);
+//     div.appendChild(h2);
 
-    const ul = document.createElement('ul');
+//     const ul = document.createElement('ul');
 
-    for (let item of blogItem) 
-    {
-        if (item.type == 'Technical')
-        {
-            const li  = document.createElement('li');
-            const a = document.createElement('a');
-            
-            a.innerText = item.title;
-            a.href = generateBlogLink(item.title, item.type);
+//     for (let item of blogItem) 
+//     {
+//         if (item.type == 'Technical')
+//         {
+//             const li  = document.createElement('li');
+//             const a = document.createElement('a');
 
-            li.appendChild(a);
-            ul.appendChild(li);
-        }
-    }
+//             a.innerText = item.title;
+//             a.href = generateBlogLink(item.title, item.type);
 
-    div.appendChild(ul);
-}
+//             li.appendChild(a);
+//             ul.appendChild(li);
+//         }
+//     }
 
-function initialiseCreativeMenu(){
-    const div = document.querySelector('.creative');
+//     div.appendChild(ul);
+// }
 
-    const h2 = document.createElement('h2');
+// function initialiseCreativeMenu(){
+//     const div = document.querySelector('.creative');
 
-    h2.innerText = 'Creative Blogs';
+//     const h2 = document.createElement('h2');
 
-    div.appendChild(h2);
+//     h2.innerText = 'Creative Blogs';
 
-    const ul = document.createElement('ul');
+//     div.appendChild(h2);
 
-    for (let item of blogItem) 
-    {
-        if (item.type == 'Creative')
-        {
-            const li  = document.createElement('li');
-            const a = document.createElement('a');
-            
-            a.innerText = item.title;
-            a.href = generateBlogLink(item.title, item.type);
+//     const ul = document.createElement('ul');
 
-            li.appendChild(a);
-            ul.appendChild(li);
-        }
-    }
+//     for (let item of blogItem) 
+//     {
+//         if (item.type == 'Creative')
+//         {
+//             const li  = document.createElement('li');
+//             const a = document.createElement('a');
 
-    div.appendChild(ul);
-}
+//             a.innerText = item.title;
+//             a.href = generateBlogLink(item.title, item.type);
 
-function initialiseBlogMenu(){
-    initialiseTechnicalMenu();
-    initialiseTheoryMenu();
-    initialiseCreativeMenu();
+//             li.appendChild(a);
+//             ul.appendChild(li);
+//         }
+//     }
+
+//     div.appendChild(ul);
+// }
+
+function initialiseBlogMenu() {
+    initialiseBlofMenuByClass('Technical');
+    initialiseBlofMenuByClass('Theory');
+    initialiseBlofMenuByClass('Creative');
 }
 
 document.addEventListener("DOMContentLoaded", () => initialiseBlogMenu());

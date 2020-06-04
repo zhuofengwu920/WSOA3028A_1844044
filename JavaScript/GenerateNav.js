@@ -6,6 +6,18 @@ const menuItem = [
 ]
 
 function initialiseMenu(){
+    const header = document.querySelector('header');
+
+    const h1 = document.createElement('h1');
+
+    h1.innerText = 'Kloma Yellow';
+
+    header.appendChild(h1);
+
+    let tempNav = document.createElement('nav');
+
+    header.appendChild(tempNav);
+
     const nav = document.querySelector('nav');
 
     const ul = document.createElement('ul');
