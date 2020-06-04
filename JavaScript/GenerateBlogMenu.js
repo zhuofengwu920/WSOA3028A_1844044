@@ -15,7 +15,7 @@ const blogItem = [
 ]
 
 function generateBlogLink(temptitle, temptype){
-    let link = '/WSOA3028A_1844044/Blog/' + temptype + '/' + temptitle + '.html';
+    let link = '/Blog/' + temptype + '/' + temptitle + '.html';
 
     return link
 }
