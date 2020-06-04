@@ -1,23 +1,23 @@
 const blogItem = [
-    { title: 'As-We-May-Think', link: '/WSOA3028A_1844044/Blog/Theory/As-We-May-Think.html', type: 'Theory' },
-    { title: 'Flash-History', link: '/WSOA3028A_1844044/Blog/Theory/Flash-History.html', type: 'Theory' },
-    { title: 'From-3G-To-4G', link: '/WSOA3028A_1844044/Blog/Theory/From-3G-To-4G.html', type: 'Theory' },
-    { title: 'Library-Of-Babel', link: '/WSOA3028A_1844044/Blog/Theory/', type: 'Theory' },
-    { title: 'From-3G-To-4G', link: '/WSOA3028A_1844044/Blog/Theory', type: 'Theory' },
-    { title: 'Medium-Is-The-Message', link: '/WSOA3028A_1844044/Blog/Theory', type: 'Theory' },
-    { title: 'The-Importance-Of-Accessibility', link: '/WSOA3028A_1844044/Blog/Theory', type: 'Theory' },
-    { title: 'Hypertext-Navigation-Structure', link: '/WSOA3028A_1844044/Blog/', type: 'Technical' },
-    { title: 'Semantic-Markup', link: '/WSOA3028A_1844044/Blog/', type: 'Technical' },
-    { title: 'What-Is--A-Browser', link: '/WSOA3028A_1844044/Blog/', type: 'Technical' },
-    { title: 'Ways-Of-Teaching-Oline-Minimising-Data-Usage', link: '/WSOA3028A_1844044/Blog/', type: 'Creative' },
-    { title: 'Origami', link: '/WSOA3028A_1844044/Blog/', type: 'Creative' },
-    { title: 'COVID-19', link: '/WSOA3028A_1844044/Blog/', type: 'Creative' },
+    { title: 'As-We-May-Think', type: 'Theory' },
+    { title: 'Flash-History', type: 'Theory' },
+    { title: 'From-3G-To-4G', type: 'Theory' },
+    { title: 'Library-Of-Babel', type: 'Theory' },
+    { title: 'From-3G-To-4G', type: 'Theory' },
+    { title: 'Medium-Is-The-Message', type: 'Theory' },
+    { title: 'The-Importance-Of-Accessibility', type: 'Theory' },
+    { title: 'Hypertext-Navigation-Structure', type: 'Technical' },
+    { title: 'Semantic-Markup', type: 'Technical' },
+    { title: 'What-Is-A-Browser', type: 'Technical' },
+    { title: 'Ways-Of-Teaching-Oline-Minimising-Data-Usage', type: 'Creative' },
+    { title: 'Origami', type: 'Creative' },
+    { title: 'COVID-19', type: 'Creative' },
 ]
 
-function generateBlogLink(title, type){
-    let link = '/WSOA3028A_1844044/Blog/' + type + '/' + title + '.html';
+function generateBlogLink(temptitle, temptype){
+    let link = '/WSOA3028A_1844044/Blog/' + temptype + '/' + temptitle + '.html';
 
-    console.log(link)
+    return link
 }
 
 function initialiseTheoryMenu(){
@@ -50,11 +50,61 @@ function initialiseTheoryMenu(){
 }
 
 function initialiseTechnicalMenu(){
-    
+    const div = document.querySelector('.technical');
+
+    const h2 = document.createElement('h2');
+
+    h2.innerText = 'Technical Blogs';
+
+    div.appendChild(h2);
+
+    const ul = document.createElement('ul');
+
+    for (let item of blogItem) 
+    {
+        if (item.type == 'Technical')
+        {
+            const li  = document.createElement('li');
+            const a = document.createElement('a');
+            
+            a.innerText = item.title;
+            a.href = generateBlogLink(item.title, item.type);
+
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+    }
+
+    div.appendChild(ul);
 }
 
 function initialiseCreativeMenu(){
-    
+    const div = document.querySelector('.creative');
+
+    const h2 = document.createElement('h2');
+
+    h2.innerText = 'Creative Blogs';
+
+    div.appendChild(h2);
+
+    const ul = document.createElement('ul');
+
+    for (let item of blogItem) 
+    {
+        if (item.type == 'Creative')
+        {
+            const li  = document.createElement('li');
+            const a = document.createElement('a');
+            
+            a.innerText = item.title;
+            a.href = generateBlogLink(item.title, item.type);
+
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+    }
+
+    div.appendChild(ul);
 }
 
 function initialiseBlogMenu(){

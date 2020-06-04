@@ -37,7 +37,7 @@ nav ul li{
 nav ul li a {
     text-align: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 1.25em;
     font-size: 20;
     overflow-x: hidden;
     color: #666;
@@ -56,21 +56,21 @@ nav ul li a:hover{
 /*Blog Page*/
 
 .blog-divide {
-    display: flex;
+    display: block flex;
     justify-content: space-between;
     margin: 0;
     padding: 1%;
 }
 
 .blog-divide div{
-    margin-top: 25px;
-    padding: 25px;
-    width: 400px;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 50rem;
     height: 100%;
     background-color: rgb(80, 129, 128);
 }
 
-.blog-divide div h1{
+.blog-divide div h2{
     text-align: center;
 }
 
