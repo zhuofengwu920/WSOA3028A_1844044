@@ -8,6 +8,8 @@ const menuItem = [
 var hasExtended = false;
 
 function extendMenu(){
+
+    let tempHeader = document.querySelector('header');
     
     if(!hasExtended)
     {
@@ -15,9 +17,12 @@ function extendMenu(){
 
         for(let item of li)
         {
-            item.style.display = "inline-flex";
+            item.style.display = "grid";
             item.style.visibility = "visible";
         }
+
+        
+        tempHeader.style.height = '20em';
 
         hasExtended = true;
     }
@@ -30,6 +35,8 @@ function extendMenu(){
             item.style.display = "none";
             item.style.visibility = "hidden";
         }
+
+        tempHeader.style.height = 'auto';
 
         hasExtended = false
     }
@@ -67,14 +74,10 @@ function initialiseMenu(){
 
     nav.appendChild(ul);
 
-    let span = document.createElement('span');
-
     let image = document.createElement('img');
 
     image.src = '/WSOA3028A_1844044/Images/UI/MobileToggle.png';
     image.classList = 'toggle';
-
-    span.appendChild(image);
 
     header.appendChild(image);
 
