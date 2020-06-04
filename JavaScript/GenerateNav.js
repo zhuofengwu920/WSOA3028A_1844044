@@ -5,6 +5,37 @@ const menuItem = [
     { title: 'Contact', link: '/WSOA3028A_1844044/Contact' }
 ]
 
+var hasExtended = false;
+
+function extendMenu(){
+    
+    if(!hasExtended)
+    {
+        let li = document.querySelectorAll('nav > ul > li');
+
+        for(let item of li)
+        {
+            item.style.display = "inline-flex";
+            item.style.visibility = "visible";
+        }
+
+        hasExtended = true;
+    }
+    else
+    {
+        let li = document.querySelectorAll('nav > ul > li');
+
+        for(let item of li)
+        {
+            item.style.display = "none";
+            item.style.visibility = "hidden";
+        }
+
+        hasExtended = false
+    }
+    
+}
+
 function initialiseMenu(){
     const header = document.querySelector('header');
 
@@ -35,6 +66,21 @@ function initialiseMenu(){
     }
 
     nav.appendChild(ul);
+
+    let span = document.createElement('span');
+
+    let image = document.createElement('img');
+
+    image.src = '/WSOA3028A_1844044/Images/UI/MobileToggle.png';
+    image.classList = 'toggle';
+
+    span.appendChild(image);
+
+    header.appendChild(image);
+
+    let toggle = document.querySelector('.toggle');
+    console.log(toggle);
+    toggle.addEventListener('click', () => extendMenu())
 }
 
-document.addEventListener("DOMContentLoaded", () => initialiseMenu());
+document.addEventListener("DOMContentLoaded", () => initialiseMenu()); 
