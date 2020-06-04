@@ -64,8 +64,11 @@ nav ul li a:hover{
 
 .blog-divide div{
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
-    width: 50rem;
+    width: 60%;
+    align-self: center;
     height: 100%;
     background-color: rgb(80, 129, 128);
 }
@@ -85,7 +88,7 @@ nav ul li a:hover{
     text-decoration: none;
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 1em;
 }
 
 .blog-divide div ul li a{
