@@ -15,7 +15,7 @@ function initialiseMenu(){
         const li  = document.createElement('li');
         const a = document.createElement('a');
         
-        a.innerText = item.title
+        a.innerText = item.title;
         a.href = item.link;
 
         li.appendChild(a);
