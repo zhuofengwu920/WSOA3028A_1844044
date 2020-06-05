@@ -5,6 +5,7 @@ const blogItem = [
     { title: 'Library-Of-Babel', type: 'Theory', date: new Date('2020/02/20'), summary: '' },
     { title: 'Medium-Is-The-Message', type: 'Theory', date: new Date('2020/02/23'), summary: '' },
     { title: 'The-Importance-Of-Accessibility', type: 'Theory', date: new Date('2020/03/10'), summary: 'Reflection on how important it is to make your own creation accessible.'},
+    { title: 'Toward-A-Study-Of-Information-Geographies', type: 'Theory', date: new Date('2020/04/27'), summary: 'Reflection on the "Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information" paper'},
     { title: 'Hypertext-Navigation-Structure', type: 'Technical', date: new Date('2020/03/06'), summary: 'Brief description on Hyperlinks, Hypertext and their structures.' },
     { title: 'Semantic-Markup', type: 'Technical', date: new Date('2020/02/27'), summary: '' },
     { title: 'What-Is-A-Browser', type: 'Technical', date: new Date('2020/03/06'), summary: '' },
