@@ -6,6 +6,7 @@ const blogItem = [
     { title: 'Medium-Is-The-Message', type: 'Theory', date: new Date('2020/02/23') },
     { title: 'The-Importance-Of-Accessibility', type: 'Theory', date: new Date('2020/03/10') },
     { title: 'Toward-A-Study-Of-Information-Geographies', type: 'Theory', date: new Date('2020/04/27') },
+    { title: 'Tweet-TikTok-face-based-filter-bubble-AI', type: 'Theory', date: new Date('2020/05/27') },
     { title: 'Hypertext-Navigation-Structure', type: 'Technical', date: new Date('2020/03/06') },
     { title: 'Semantic-Markup', type: 'Technical', date: new Date('2020/02/27') },
     { title: 'What-Is-A-Browser', type: 'Technical', date: new Date('2020/03/06') },
