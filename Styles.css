@@ -5,6 +5,24 @@ body {
     font-family: Arial;
 }
 
+h3{
+    font-size: 2em;
+}
+
+cite{
+    font-family: 'Times New Roman';
+}
+
+p{
+    font-size: 1.25em;
+}
+
+
+h5, date h6{
+    font-style: italic;
+    font-size: 1em;
+}
+
 /* nav bar */
 
 header {
@@ -51,7 +69,7 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     padding: 1.25em;
-    font-size: 20;
+    font-size: 1.25em;
     overflow-x: hidden;
     color: #666;
 }
@@ -111,16 +129,12 @@ nav ul li a:hover{
     font-size: 30;
     overflow-x: hidden;
     color:black;
-    
+    font-size: 1.25em;
 }
 
 .blog-divide div ul li a:hover{
     color: #E1E5F2;
     background-color: #5A7D7C;
-}
-
-date h6{
-    font-style: italic;
 }
 
 article {
@@ -132,6 +146,8 @@ article {
 article h2{
     text-align: center;
 }
+
+
 
 
 
@@ -157,7 +173,17 @@ article h2{
         width: 80%;
     }
 
+    .blog-divide div ul li a{
+        font-size: 1em;
+    }
+
     header img{
         visibility: visible;
+    }
+
+    article {
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

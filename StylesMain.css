@@ -1,0 +1,36 @@
+article {
+    display: flex;
+}
+
+article section.col{
+    flex: 50%;
+    padding: 0.5em;
+}
+
+article:nth-child(even){
+    direction: rtl;
+}
+
+article section p{
+    direction: ltr;
+}
+
+article section a{
+    text-decoration: none;
+    color: rgb(80, 129, 128);
+    transition: 0.2s;
+}
+
+article section a:hover{
+    color: lightgreen;
+}
+
+@media (max-width: 600px){
+    article {
+        display: block;
+    }
+
+    p{
+        font-size: 1em;
+    }
+}

@@ -22,7 +22,7 @@ function extendMenu(){
         }
 
         
-        tempHeader.style.height = '20em';
+        tempHeader.style.height = '25em';
 
         hasExtended = true;
     }
@@ -82,7 +82,7 @@ function initialiseMenu(){
     header.appendChild(image);
 
     let toggle = document.querySelector('.toggle');
-    console.log(toggle);
+
     toggle.addEventListener('click', () => extendMenu())
 }
 
