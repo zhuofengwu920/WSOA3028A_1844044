@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <title>External Dependency: PopMotion.js(Week 17)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="External-Dependency">
+    <meta name="author" content="Kloma Yellow">
+    <script src="../../JavaScript/GenerateNav.js"></script>
+    <link rel="stylesheet" href="../../Styles.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main class="blog-content">
+        <article>
+            <h3>External Dependency: PopMotion.js(Week 17)</h3>
+            <h5>Author: Kloma Yellow</h5>
+            <date>
+                <h6>Created: 28 June 2020</h6>
+            </date>
+            <date>
+                <h6>Last updated: 28 June 2020</h6>
+            </date>
+            <p>
+                External Dependencies are external libraries and frameworks that can be imported to hep in projects and
+                reuse codes in these dependencies to improve the site overall. These external dependencies often help
+                developers to develop their site with either more convenience or give the developers more power to
+                create their site. The nature of reusing code in using these dependencies means developers will need to
+                learn this library or frame to use it effectively. Since it is external, it may need to be updated and
+                some even need to be purchased. It also adds loads to the load time of the site, since it will need to
+                download the dependencies each time it is visited. So even though it does provide convenience and power,
+                it also has its downsides.
+            </p>
+            <p>
+                The goal was to create a simple looped animation of little humanoid figures to move in a region and not
+                interact with each other, even though they may intersect with one another. The idea here was to reflect
+                the relationships between people in a busy city like Johannesburg. People were shown in a minimalistic
+                manner with different colours to show diversity, but not necessarily coherent in no interaction. The
+                lifeless grey in the background is an attempt in both the representing the concrete cement city and the
+                attitude to one another. This is then placed at the about section as part of how the character or the
+                how I see Johannesburg. This will be placed at my about page to show some character.
+            </p>
+            <p>
+                To achieve this the one dependency that was used is Popmotion.js. Popmotion is a JavaScript library that
+                makes animating elements in the site easier and efficient. It was also fairly easy to learn the basics
+                of this library.
+            </p>
+            <p>
+                The way that was taken to make this animation was to alter images’ x and y screen space coordinate in a
+                restrained space. The function will assign a random location within the restrained space then have the
+                object to move towards there with an ease-in-out motion (to show they are travelling). Once that
+                animation is completed it will call itself again, then form an everlasting random travelling motion of
+                these images (people). This is then called for the number of times that images with the class person on
+                the page.
+            </p>
+            <p>
+                Other libraries can do a similar thing, some even better in performance. For example, Anime.js.
+                Popmotion.js for less powerful compared to Anime.js. However, Popmotion has the upper hand in how
+                lightweight the library is. The larger the library the more load is placed on the load time. In this
+                case, Popmotion can do just fine, due to how simple the animation that is wanted to implement. Thus for
+                efficiency Popmotion was selected.
+            </p>
+            <p>
+                The piece here is an attempt on a minimalistic representation or reflection of Johannesburg in a
+                foreigner’s eye. Especially for a foreigner that has been in Johannesburg for a long time. For native
+                here they may not see just how diverse the people here are, in terms of race, culture and religion. The
+                other thing is the city feel, people care a lot less about each other. Avoid interactions unless it is
+                absolutely necessary. In that case, It is called intersections here. Someone crossing with someone else
+                but not a will to interact.
+            </p>
+            <p>
+                These are the significant characteristics view on Johannesburg for both through the character and me.
+            </p>
+
+
+        </article>
+    </main>
+</body>
+
+</html>
